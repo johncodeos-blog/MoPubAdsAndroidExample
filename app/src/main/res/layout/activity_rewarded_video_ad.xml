@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    tools:context=".RewardedVideoAds.RewardedVideoAdActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/rewarded_ad_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="15dp"
+            android:textStyle="bold"
+            android:text="" />
+
+        <Button
+            android:id="@+id/load_rewarded_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="Load Rewarded Ad"
+            android:layout_marginBottom="15dp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimaryDark" />
+
+
+        <Button
+            android:id="@+id/check_rewarded_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="Check Rewarded Ad"
+            android:layout_marginBottom="15dp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/show_rewarded_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="Show Rewarded Ad"
+            android:layout_marginBottom="15dp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimaryDark" />
+
+    </LinearLayout>
+
+</RelativeLayout>
