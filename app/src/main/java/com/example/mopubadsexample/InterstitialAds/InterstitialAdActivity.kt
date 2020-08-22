@@ -2,6 +2,7 @@ package com.example.mopubadsexample.InterstitialAds
 
 import android.os.Bundle
 import android.os.Handler
+import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import com.example.mopubadsexample.Constant
 import com.example.mopubadsexample.MyMoPub
@@ -21,7 +22,7 @@ class InterstitialAdActivity : AppCompatActivity() {
         setContentView(R.layout.activity_interstitial_ad)
         MyMoPub().init(this, Constant.MoPub.INTERSTITIAL_AD_UNIT)
 
-        Handler().postDelayed({
+        Handler(Looper.getMainLooper()).postDelayed({
             initAds()
         }, 200)
     }

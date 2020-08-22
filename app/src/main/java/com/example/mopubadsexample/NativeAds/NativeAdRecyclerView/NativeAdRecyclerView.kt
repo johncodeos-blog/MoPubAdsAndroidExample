@@ -2,6 +2,7 @@ package com.example.mopubadsexample.NativeAds.nativeAdRecyclerView
 
 import android.os.Bundle
 import android.os.Handler
+import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mopubadsexample.Constant
@@ -46,7 +47,7 @@ class NativeAdRecyclerView : AppCompatActivity() {
         adapter =
             NativeAd_RVAdapter(itemsCells)
         native_ad_rv.adapter = adapter
-        Handler().postDelayed({
+        Handler(Looper.getMainLooper()).postDelayed({
             initNativeAds()
         }, 200)
         adapter.notifyDataSetChanged()

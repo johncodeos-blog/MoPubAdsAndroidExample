@@ -2,6 +2,7 @@ package com.example.mopubadsexample.NativeAds.nativeAd
 
 import android.os.Bundle
 import android.os.Handler
+import android.os.Looper
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.mopubadsexample.Constant
@@ -31,7 +32,7 @@ class NativeAdSingleView : AppCompatActivity() {
 
         MyMoPub().init(this, Constant.MoPub.NATIVE_AD_UNIT)
 
-        Handler().postDelayed({
+        Handler(Looper.getMainLooper()).postDelayed({
             initAds()
         }, 200)
     }
