@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MopubAdsExample.iml" filepath="$PROJECT_DIR$/MopubAdsExample.iml" group="MopubAdsExample" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="MopubAdsExample/app" />
+      <module fileurl="file://$PROJECT_DIR$/MopubAdsExample.iml" filepath="$PROJECT_DIR$/MopubAdsExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MopubAdsExample.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MopubAdsExample.app.iml" />
     </modules>
   </component>
 </project>

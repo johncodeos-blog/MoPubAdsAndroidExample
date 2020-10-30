@@ -12,7 +12,7 @@ import kotlinx.android.synthetic.main.activity_native_video_ad_recycler_view.*
 class NativeVideoAdRecyclerView : AppCompatActivity() {
 
     lateinit var itemsCells: ArrayList<String?>
-    //lateinit var adapter: NativeVideoAd_RVAdapter
+    lateinit var adapter: NativeVideoAd_RVAdapter
     private lateinit var moPubAdapter: MoPubRecyclerAdapter
 
 
@@ -40,11 +40,11 @@ class NativeVideoAdRecyclerView : AppCompatActivity() {
     }
 
     private fun setAdapter() {
-//        adapter =
-//            NativeVideoAd_RVAdapter(itemsCells)
-//        native_video_ad_rv.adapter = adapter
-//        initAds()
-//        adapter.notifyDataSetChanged()
+        adapter =
+            NativeVideoAd_RVAdapter(itemsCells)
+        native_video_ad_rv.adapter = adapter
+        initAds()
+        adapter.notifyDataSetChanged()
     }
 
     private fun setRVLayoutManager() {
@@ -54,7 +54,7 @@ class NativeVideoAdRecyclerView : AppCompatActivity() {
     }
 
     private fun initAds() {
-        //moPubAdapter = MoPubRecyclerAdapter(this, adapter)
+        moPubAdapter = MoPubRecyclerAdapter(this, adapter)
         val mediaViewBinder = MediaViewBinder.Builder(R.layout.mopub_native_video_ad_view)
             .mediaLayoutId(R.id.mopub_native_video_ad_media_layout)
             .iconImageId(R.id.mopub_native_video_ad_icon)
